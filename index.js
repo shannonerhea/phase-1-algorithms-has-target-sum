@@ -8,7 +8,7 @@
 //  return -1
 // }
 
-function hasTargetSum(arr, target) {
+const hasTargetSum = (arr, target) => {
   for (let i = 0; i < arr.length; i++) {
     let num1 = arr[i];
 
