@@ -1,9 +1,35 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
+// __function hasTargetSum(arr, target) {
+//  for (let i = 0; i < arr.length; i++) {
+//   let ele = arr[i];
+//   if (target === ele) {
+//     return i;
+//   };
+//  };
+//  return -1
+// }
+
+function hasTargetSum(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    let num1 = arr[i];
+
+    for (let j = i + 1; j < arr.length; j++) {
+        let num2 = arr[j];
+
+        if (num1 + num2 === target) {
+            return true;
+        }
+    }
 }
 
+return false;
+};
 /* 
-  Write the Big O time complexity of your function here
+  I didnt learn about Big O, 
+  Il come back and answer this
+   when we go over it. Well thats 
+   not true i know a lil about big o 
+   but i dont know any other way 
+   to solve this at the momnet
 */
 
 /* 
